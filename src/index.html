@@ -11,29 +11,250 @@
     <body>
 
 
-        <main>
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Opret ny Vagt</h4>
+        <section class="schedule-form__container">
+            <div class="schedule-form__bar">
+                <h3 class="schedule-form__heading">Opret ny Vagt</h3>
+                <button type="button" class="schedule-form__close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&cross;</span></button>
             </div>
 
-            <form action="" id="saveScheduleForm">
-                <label for="title">Vagt title</label>
-                <input type="text" name="title" id="" placeholder="team name from server">
-                <label for="schedulestart">Vagt dag</label>
-                <select name="schedulestart">
-                    <option value="start_date">1</option>
-                </select>
-                <label for="schedulestart">Vagt start</label>
-                <select name="schedulestart">
-                    <option value="start_time">1</option>
-                </select>
-                <label for="schedulestart">Vagt slut</label>
-                <select name="schedulestart">
-                    <option value="end_time">1</option>
-                </select>
+            <form action="" id="saveScheduleForm" class="schedule-form__form">
+                <div class="schedule-form__selection-container">
+                    <label for="title"  class="schedule-form__title schedule-form__title--name">Vagt title</label>
+                    <input type="text" name="title" id="" placeholder="Freddy's allstars" class="schedule-form__input-box">
+                </div>
+                <div class="schedule-form__selection-container">
+                    <h4 class="schedule-form__title schedule-form__title--dropdown">Vagt start</h4>
+                    <div class="schedule-form__drop-down-container schedule-form__drop-down-container--day">
+                        <label for="schedulestart-day" class="schedule-form__drop-down-title">dag</label>
+                        <select name="schedulestart-day" id="schedulestart-day" class="schedule-form__drop-down">
+                            <option value="start_date">30.01.2022</option>
+                            <option value="start_date">31.01.2022</option>
+                            <option value="start_date">01.02.2022</option>
+                            <option value="start_date">02.02.2022</option>
+                            <option value="start_date">03.02.2022</option>
+                            <option value="start_date">04.02.2022</option>
+                        </select>
+                    </div>
+                    <div class="schedule-form__drop-down-container">
+                        <label for="schedulestart" class="schedule-form__drop-down-title">tt</label>
+                        <select ame="schedulestart-day" class="schedule-form__drop-down schedule-form__drop-down--hours">
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                        </select>
+                    </div>
+                    <div class="schedule-form__drop-down-container">
+                        <label for="schedulestart-minutes" class="schedule-form__drop-down-title">mm</label>
+                        <select name="schedulestart-minutes" class="schedule-form__drop-down schedule-form__drop-down--minutes">
+                            <option value="start_date">00</option>
+                            <option value="start_date">05</option>
+                            <option value="start_date">10</option>
+                            <option value="start_date">15</option>
+                            <option value="start_date">20</option>
+                            <option value="start_date">25</option>
+                            <option value="start_date">30</option>
+                            <option value="start_date">35</option>
+                            <option value="start_date">40</option>
+                            <option value="start_date">45</option>
+                            <option value="start_date">50</option>
+                            <option value="start_date">55</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="schedule-form__selection-container">
+                    <h4 class="schedule-form__title schedule-form__title--dropdown">Vagt start</h4>
+                    <div class="schedule-form__drop-down-container  schedule-form__drop-down-container--day">
+                        <label for="schedulestart" class="schedule-form__drop-down-title">dag</label>
+                        <select name="schedulestart-day" class="schedule-form__drop-down">
+                            <option value="start_date">30.12.2022</option>
+                            <option value="start_date">31.12.2022</option>
+                        </select>
+                    </div>
+                    <div class="schedule-form__drop-down-container">
+                        <label for="schedulestart" class="schedule-form__drop-down-title">tt</label>
+                        <select ame="schedulestart-day" class="schedule-form__drop-down  schedule-form__drop-down--hours">
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                        </select>
+                    </div>
+                    <div class="schedule-form__drop-down-container">
+                        <label for="schedulestart-minutes" class="schedule-form__drop-down-title">mm</label>
+                        <select name="schedulestart-minutes" class="schedule-form__drop-down schedule-form__drop-down--minutes">
+                            <option value="start_date">00</option>
+                            <option value="start_date">05</option>
+                            <option value="start_date">10</option>
+                            <option value="start_date">15</option>
+                            <option value="start_date">20</option>
+                            <option value="start_date">25</option>
+                            <option value="start_date">30</option>
+                            <option value="start_date">35</option>
+                            <option value="start_date">40</option>
+                            <option value="start_date">45</option>
+                            <option value="start_date">50</option>
+                            <option value="start_date">55</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="schedule-form__selection-container schedule-form__selection-container--helpers">
+                    <label for="helpers-needed"  class="schedule-form__title schedule-form__title--helper-numbers">Antal på vagt</label>
+                    <input type="number" name="title" id="helpers-needed" placeholder="1" class="schedule-form__helpers-needed">
+                </div>
+
+                <div class="schedule-form__helper-select-container">
+                        <div class="schedule-form__helpers-select schedule-form__helpers-select--unselected">
+                            <h4 class="schedule-form__title schedule-form__title--helpers">Frivillige</h4>
+                            <input input="text" class="schedule-form__input-box schedule-form__input-box--search" placeholder="søge">
+
+                            <div class="schedule-form__helpers-holder schedule-form__helpers-holder--unselected">
+                                <div class="schedule-form__helper-container">
+                                    <img src="/img/avatar.png" alt="img" class="schedule-form__helper-image">
+                                    <div class="schedule-form__helper-info-container">
+                                        <h5 class="schedule-form__helper-name">Fredrik Fred Fredrikson</h5>
+                                        <p class="schedule-form__helper-info"><span class="schedule-form__helper-time">0 00</span> timer på vagt</p>
+                                    </div>
+                                </div>
+
+                                <div class="schedule-form__helper-container">
+                                    <img src="/img/avatar.png" alt="img" class="schedule-form__helper-image">
+                                    <div class="schedule-form__helper-info-container">
+                                        <h5 class="schedule-form__helper-name">Fredrik Fred Fredrikson</h5>
+                                        <p class="schedule-form__helper-info"><span class="schedule-form__helper-time">0 00</span> timer på vagt</p>
+                                    </div>
+                                </div>
+
+                                <div class="schedule-form__helper-container">
+                                    <img src="/img/avatar.png" alt="img" class="schedule-form__helper-image">
+                                    <div class="schedule-form__helper-info-container">
+                                        <h5 class="schedule-form__helper-name">Fredrik Fred Fredrikson</h5>
+                                        <p class="schedule-form__helper-info"><span class="schedule-form__helper-time">0 00</span> timer på vagt</p>
+                                    </div>
+                                </div>
+
+                                <div class="schedule-form__helper-container">
+                                    <img src="/img/avatar.png" alt="img" class="schedule-form__helper-image">
+                                    <div class="schedule-form__helper-info-container">
+                                        <h5 class="schedule-form__helper-name">Fredrik Fred Fredrikson</h5>
+                                        <p class="schedule-form__helper-info"><span class="schedule-form__helper-time">0 00</span> timer på vagt</p>
+                                    </div>
+                                </div>
+
+                                <div class="schedule-form__helper-container">
+                                    <img src="/img/avatar.png" alt="img" class="schedule-form__helper-image">
+                                    <div class="schedule-form__helper-info-container">
+                                        <h5 class="schedule-form__helper-name">Fredrik Fred Fredrikson</h5>
+                                        <p class="schedule-form__helper-info"><span class="schedule-form__helper-time">0 00</span> timer på vagt</p>
+                                    </div>
+                                </div>
+
+                                <div class="schedule-form__helper-container">
+                                    <img src="/img/avatar.png" alt="img" class="schedule-form__helper-image">
+                                    <div class="schedule-form__helper-info-container">
+                                        <h5 class="schedule-form__helper-name">Fredrik Fred Fredrikson</h5>
+                                        <p class="schedule-form__helper-info"><span class="schedule-form__helper-time">0 00</span> timer på vagt</p>
+                                    </div>
+                                </div>
+
+                                <div class="schedule-form__helper-container">
+                                    <img src="/img/avatar.png" alt="img" class="schedule-form__helper-image">
+                                    <div class="schedule-form__helper-info-container">
+                                        <h5 class="schedule-form__helper-name">Fredrik Fred Fredrikson</h5>
+                                        <p class="schedule-form__helper-info"><span class="schedule-form__helper-time">0 00</span> timer på vagt</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="schedule-form__helpers-select schedule-form__helpers-select--selected">
+                            <h4 class="schedule-form__title schedule-form__title--helpers">På vagt</h4>
+                            <button type="button" class="schedule-form__clear-all">&nltri; <span class="schedule-form__clear-all-text">fjerne</span></button>
+                            <div class="schedule-form__helpers-holder schedule-form__helper-holders--selected">
+
+                                    <div class="schedule-form__helper-container">
+                                        <img src="/img/avatar.png" alt="img" class="schedule-form__helper-image">
+                                        <div class="schedule-form__helper-info-container">
+                                            <h5 class="schedule-form__helper-name">Fredrik Fred Fredrikson</h5>
+                                            <p class="schedule-form__helper-info"><span class="schedule-form__helper-time">0 00</span> timer på vagt</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule-form__helper-container">
+                                        <img src="/img/avatar.png" alt="img" class="schedule-form__helper-image">
+                                        <div class="schedule-form__helper-info-container">
+                                            <h5 class="schedule-form__helper-name">Fredrik Fred Fredrikson</h5>
+                                            <p class="schedule-form__helper-info"><span class="schedule-form__helper-time">0 00</span> timer på vagt</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule-form__helper-container">
+                                        <img src="/img/avatar.png" alt="img" class="schedule-form__helper-image">
+                                        <div class="schedule-form__helper-info-container">
+                                            <h5 class="schedule-form__helper-name">Fredrik Fred Fredrikson</h5>
+                                            <p class="schedule-form__helper-info"><span class="schedule-form__helper-time">0 00</span> timer på vagt</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule-form__helper-container">
+                                        <img src="/img/avatar.png" alt="img" class="schedule-form__helper-image">
+                                        <div class="schedule-form__helper-info-container">
+                                            <h5 class="schedule-form__helper-name">Fredrik Fred Fredrikson</h5>
+                                            <p class="schedule-form__helper-info"><span class="schedule-form__helper-time">0 00</span> timer på vagt</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
             </form>
-        </main>
+            <div class="schedule-form__bar">
+                <button type="button" class="schedule-form__button schedule-form__button--cancel" data-dismiss="modal">Fortryd</button>
+                <button id="addtoschedule" name="addtoschedule" class="schedule-form__button schedule-form__button--submit">Opret ny Vagt </button>
+            </div>
+        </section>
         <script src="/js/script.js" lang="utf-8"></script>
     </body>
 </html>

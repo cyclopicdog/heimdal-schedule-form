@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+.schedule-form__container {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+    font-size: 18px;
+    background-color: rgb(0, 192, 239);
+    color: white;
+}
+
+.schedule-form__bar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px;
+    background-color: rgb(0, 167, 208);
+}
+.schedule-form__heading {
+    margin: 0;
+}
+
+.schedule-form__close {
+    width: 1.7em;
+    height: 1.7em;
+    padding-right: 0.45em;
+    padding-bottom: 0.35em;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.schedule-form__title {
+    width: 100px;
+    height: 1.7em;
+    margin: auto 0 0 0;
+    padding: 5px 0;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.schedule-form__title--name {
+    padding: 3px 0 3px 0;
+}
+
+.schedule-form__title--helper-numbers {
+    width: 135px;
+    padding: 3px 0 3px 0;
+}
+
+.schedule-form__title--dropdown--day {
+    width: 104px;
+    border: 1px solid black;
+}
+
+.schedule-form__title--helpers {
+    margin-bottom: 2px;
+    padding-left: 10px;
+    font-size: 0.9em;
+    color: rgb(73, 95, 223);
+}
+
+.schedule-form__form {
+    padding: 20px;
+}
+.schedule-form__input-box, .schedule-form__helpers-needed, .schedule-form__clear-all {
+    width: 360px;
+    height: 1.7em;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.schedule-form__input-box--search, .schedule-form__clear-all {
+    width: 190px;
+    margin-left: 10px;
+}
+
+.schedule-form__helpers-needed {
+    width: 3em;
+}
+
+.schedule-form__clear-all {
+    background-color: red;
+    color: white;
+}
+
+.schedule-form__clear-all-text {
+    font-size: 0.8em;
+}
+
+.schedule-form__selection-container {
+    width: auto;
+    height: auto;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-content: flex-end;
+}
+
+.schedule-form__selection-container--helpers {
+    margin-top: 1.5em;
+}
+
+.schedule-form__drop-down-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+}
+
+.schedule-form__drop-down-container--day {
+    margin-right: 1em;
+}
+
+.schedule-form__drop-down-title {
+    text-align: center;
+}
+
+.schedule-form__drop-down {
+    height: 1.7rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.schedule-form__drop-down--hours {
+    border-radius: 3px 0 0 3px;
+}
+
+.schedule-form__drop-down--minutes {
+    border-radius: 0 3px 3px 0;
+}
+
+.schedule-form__helper-select-container {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.schedule-form__helpers-select {
+    width: 220px;
+    height: 300px;
+    border-radius: 3px;
+    background-color: rgb(245, 245, 245);
+}
+
+.schedule-form__helpers-holder {
+    width: 220px;
+    height: 230px;
+    margin-top: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.schedule-form__helper-container {
+    width: 190px;
+    height: 58px;
+    display: flex;
+    padding: 3px;
+    margin: 5px 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color: rgb(73, 95, 223);
+}
+
+.schedule-form__helper-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.schedule-form__helper-info-container {
+    width: 121px;
+    height: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.schedule-form__helper-name {
+    margin: 0 0 0 3px;
+}
+
+.schedule-form__helper-info {
+    margin: auto 0 0 3px;
+    font-size: 0.8em;
+}
+
+.schedule-form__button {
+    height: 1.7em;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.schedule-form__button--submit {
+    background-color: rgb(0, 139, 76);
+    color: white;
+}
